@@ -1,6 +1,8 @@
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('chrome-launcher');
 const fileUrl = require('file-url');
+var static = require('node-static');
+var fileServer = new static.Server('./output');
 
 function launchChromeAndRunLighthouse(url, opts, config = null) {
   return chromeLauncher.launch({chromeFlags: opts.chromeFlags}).then(chrome => {
@@ -20,11 +22,16 @@ const opts = {
 };
 
 function main(index){
-  let fileurl = fileUrl(index);
-  console.log(fileUrl)
-  launchChromeAndRunLighthouse('https://example.com', opts).then(results => {
+  let fileurl = 'http://localhost:8080/'+index
+  launchChromeAndRunLighthouse(fileurl, opts).then(results => {
     console.log(results);
   });
 }
+
+require('http').createServer(function (request, response) {
+  request.addListener('end', function () {
+      fileServer.serve(request, response);
+  }).resume();
+}).listen(8080)
 
 main('index.html');
