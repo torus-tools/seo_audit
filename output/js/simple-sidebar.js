@@ -1,1 +1,0 @@
-$("button").click(function(t){var e=t.target.name;document.getElementById(e).classList.toggle("show")});
