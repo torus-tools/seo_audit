@@ -1,1 +1,0 @@
-$(document).ready(function(){$("body").scrollspy({target:".navbar",offset:200}),$(".smooth-scroll").on("click",function(o){if(""!==this.hash){o.preventDefault();var t=this.hash;$("html, body").animate({scrollTop:$(t).offset().top},400,function(){window.location.hash=t})}})});
