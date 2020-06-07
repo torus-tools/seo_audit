@@ -1,7 +1,7 @@
 {
   "name": "arjan-audit",
   "version": "0.5.1",
-  "description": "audit the local version of your website during development using lighthouse",
+  "description": "audit the SEO of your website during development using lighthouse 6",
   "main": "index.js",
   "dependencies": {
     "chrome-launcher": "^0.13.2",
@@ -19,7 +19,9 @@
   "keywords": [
     "audit",
     "lighthouse",
-    "seo"
+    "seo",
+    "local",
+    "testing"
   ],
   "author": "gabriel kardonski @gkpty",
   "license": "MIT",
