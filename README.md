@@ -3,10 +3,10 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://gkpty.mit-license.org)
 
 # Arjan Audit
-Arjan audit is a simple node module that helps automate the auditing process of static sites during the dev process using Google’s lighthouse 6. Often times when building a site, the page speed test is one of the last things we do. To avoid any surprise surprise, you can use arjan audit in your dev process or even integrate it into your tests.
+Arjan Audit is a node module to test your site's performance and SEO scores using Lighthouse 6. Often times, when building a site, the page speed test is one of the last things we do. To avoid any surprise surprise, you can use arjan audit in your dev process or even integrate it into your tests.
 
 ## How it works
-Arjan audit  uses [express](https://expressjs.com/) to serve your site and google [chrome-launcher](https://github.com/GoogleChrome/chrome-launcher) to make a headless launch of google chrome and retrieve the audits from lighthouse 6. Arjan then parses the results returned by lighthouse and return an organized subset of the results. When used from the CLI, arjan returns a neatly formatted report. 
+Arjan audit  uses [express](https://expressjs.com/) to serve your site and google [chrome-launcher](https://github.com/GoogleChrome/chrome-launcher) to make a headless launch of google chrome and retrieve the audits from lighthouse 6. Arjan then parses the results returned by lighthouse and return an organized subset of the results. Also it saves all the audits locally by date. 
 
 
 ## Getting Started 
