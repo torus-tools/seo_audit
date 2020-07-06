@@ -89,4 +89,4 @@ Google recently recalculated the score of what they consdier a healthy fast site
 | [Total Blocking Time](https://web.dev/lighthouse-total-blocking-time/) | 25%    |
 | [Cumulative Layout Shift](https://web.dev/cls/)                        | 5%     |
 
-### For more info read the [docs](https://arjan.tools/docs) 
+### For more info read the [docs](https://arjan.tools/docs.html) 
